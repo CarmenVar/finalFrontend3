@@ -7,7 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+header{
+  background-color: rgb(244, 238, 239);
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,18 +23,29 @@ code {
   cursor: pointer;
   margin-bottom: 4%;
 }
-
 h1{
   text-align: center;
 }
 
 nav{
   display: flex;
-  width: 80vw;
+  width: 90vw;
   justify-content: right;
   padding: 1rem;
   gap: 50px;
+  font-family: sans-serif;
 }
+nav > h3 {
+  width: 80%;
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+}
+
+  nav > h3::first-letter{
+    font-size: 100%;
+    color: hsl(0, 80%, 39%); font-weight: bold;
+    }
 
 a{
   color: #000;
@@ -42,6 +56,18 @@ a{
 a:hover{
   color: rgb(136, 136, 136);
 } 
+footer > div{
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  height: 20px;
+  font-size: xx-large;
+  width: 100%;
+  position: relative;
+  font-display: 10px;
+  padding: 0.5rem 0.5rem 2 0.5rem;
+  
+}
 
 footer {
   display: flex;
@@ -53,16 +79,28 @@ footer {
   width: 90%;
   height: 40px;
   margin-top: 2rem;
+  
+  
 }
+
+hr{
+  
+  color: #f00;
+  background-color: #f00;
+  height: 3px;
+  border-color: #f00;
+  border-width: 3dvb;
+  }
 
 footer > img{
   width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
-}
+  color: #250c60;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: white; 
+
+} 
 
 form{
   display: flex;

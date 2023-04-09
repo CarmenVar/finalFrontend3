@@ -26,6 +26,9 @@ const Home = () => {
           );
         })}
       </div>
+      <div>
+        <hr></hr>
+      </div>
     </main>
   );
 };

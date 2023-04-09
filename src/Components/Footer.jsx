@@ -1,12 +1,29 @@
-import React from 'react'
+import React from 'react';
+import {FontAwesomeIcon} from"@fortawesome/react-fontawesome";
+import {faFacebook, faInstagram, faTiktok, faWhatsappSquare} from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+
+function Footer() {
+  
   return (
+
     <footer>
-        <p>Powered by</p>
-        <img src="./images/DH.png" alt='DH-logo' />
+
+      <img src="./images/DH.png" alt='DH-logo' />
+     
+      <div>
+
+        <FontAwesomeIcon icon={faFacebook} />
+        <FontAwesomeIcon icon={faWhatsappSquare} />
+        <FontAwesomeIcon icon={faTiktok} />
+        <FontAwesomeIcon icon={faInstagram} />
+       
+      </div>
+     
+        
+    
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
