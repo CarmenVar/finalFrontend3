@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import { useAppContext } from '../context/AppContext';
 import { useParams } from 'react-router-dom';
 
@@ -8,6 +8,7 @@ const Detail = () => {
   const { id } = useParams();
   const { user, getUserById, theme } = useAppContext();
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
+ 
   useEffect(() => {
     if (id) {
       getUserById(id);

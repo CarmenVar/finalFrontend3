@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
 const Card = ({ name, username, id, showButton}) => {
@@ -30,11 +32,11 @@ const Card = ({ name, username, id, showButton}) => {
         {/* En cada card deberan mostrar en name - username y el id */}
       <h3>{name}</h3>
       <h3>{username}</h3>
-      <p>{id}</p>
+      <p>{id} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></p>
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
         </div>
         {showButton && (
-          <button onClick={addFav} className="favButton">
+          <button onClick={addFav}prompt={"¿Desea agregar Dentista a Favoritos?"} className="favButton">
           Add fav
           </button>
         )}
@@ -42,6 +44,6 @@ const Card = ({ name, username, id, showButton}) => {
         
     </div>
   );
-};
+}
 
 export default Card;
